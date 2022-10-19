@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bt_copiar_texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="292dp"
+        android:onClick="copiar_texto"
+        android:text="COPIAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_copiar_texto" />
+
+    <EditText
+        android:id="@+id/edt_copiar_texto"
+        android:layout_width="371dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Pon el texto"
+        android:inputType="textMultiLine"
+        android:maxLength="100"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_llamar_telefono" />
+
+    <Button
+        android:id="@+id/bt_llamar_telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="hacer_llamada"
+        android:text="llamar"
+        app:layout_constraintStart_toStartOf="@+id/edt_llamar_telefono"
+        app:layout_constraintTop_toBottomOf="@+id/edt_llamar_telefono" />
+
+    <EditText
+        android:id="@+id/edt_llamar_telefono"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Pon el telefono"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_mostrar_mapa" />
+
+    <EditText
+        android:id="@+id/edt_direccion_web"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Pon la direccion web"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_mostrar_web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:onClick="mostrar_pagina_web"
+        android:text="Mostrar web"
+        app:layout_constraintStart_toStartOf="@+id/edt_direccion_web"
+        app:layout_constraintTop_toBottomOf="@+id/edt_direccion_web" />
+
+    <EditText
+        android:id="@+id/edt_direccion_mapa"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Pon la localizacion"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_mostrar_web" />
+
+    <Button
+        android:id="@+id/bt_mostrar_mapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="mostrar_direccion_en_mapa"
+        android:text="Mostrar mapa"
+        app:layout_constraintStart_toStartOf="@+id/edt_direccion_mapa"
+        app:layout_constraintTop_toBottomOf="@+id/edt_direccion_mapa" />
+</androidx.constraintlayout.widget.ConstraintLayout>
